@@ -20,9 +20,9 @@
               "index",
               "quickstart",
                 "resources",
-                "faqs",
+                "tos",
                 "privacy",
-                "tos"
+                "faqs"
             ]
           }
           
@@ -32,14 +32,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Github",
+          "href": "https://github.com/Babs0022/SHIELD",
+          "icon": "github"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Base MiniApp",
+          "href": "https://farcaster.xyz/miniapps/XjCSkNCtDehA/shield",
+          "icon": "square"
         }
       ]
     }
