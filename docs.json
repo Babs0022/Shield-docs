@@ -11,22 +11,24 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Get Started",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
+            
             "pages": [
               "index",
-              "quickstart"
+              "quickstart",
+                "resources",
+                "faqs",
+                "privacy",
+                "tos"
             ]
           }
+          
         ]
-      },
-      {
-        "tab": "API reference",
-        "groups": []
-      }
-    ],
+            }
+        ],
     "global": {
       "anchors": [
         {

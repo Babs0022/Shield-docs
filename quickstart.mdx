@@ -16,7 +16,7 @@ Before you begin, make sure you have:
 - The **recipient's wallet address**
 
 <Tip>
-If you don't have Base ETH, you can bridge from Ethereum mainnet or use an on-ramp service.
+  If you don't have Base ETH, you can bridge from Ethereum mainnet or use an on-ramp service.
 </Tip>
 
 ## How to Share a Secure File
@@ -30,7 +30,7 @@ If you don't have Base ETH, you can bridge from Ethereum mainnet or use an on-ra
 5. If writing a message, type it in the text area
 
 <Note>
-Your content is encrypted with AES-256 **in your browser** before being uploaded to IPFS.
+  Your content is encrypted with AES-256 **in your browser** before being uploaded to IPFS.
 </Note>
 
 ### Step 2: Configure Access Policy
@@ -44,7 +44,7 @@ Set the access rules for your secure link:
    - The default is set to 3 attempts and is customizable based on your preference
 
 <Warning>
-Once you set these rules and confirm the transaction, they are **immutable** and enforced by the smart contract.
+  Once you set these rules and confirm the transaction, they are **immutable** and enforced by the smart contract.
 </Warning>
 
 ### Step 3: Sign Transaction & Share
@@ -57,7 +57,7 @@ Once you set these rules and confirm the transaction, they are **immutable** and
 6. Share the link with your recipient via your preferred channel
 
 <Info>
-The link looks like: `https://shield-app.vercel.app/r/<policyId>`
+  The link looks like: `https://shield-app.vercel.app/r/<policyId>`
 </Info>
 
 ## How to Access a Shared File
@@ -80,7 +80,7 @@ The link looks like: `https://shield-app.vercel.app/r/<policyId>`
 3. This signature proves you own the wallet without making a transaction
 
 <Note>
-This step doesn't cost any gas - it's just a cryptographic signature.
+  This step doesn't cost any gas - it's just a cryptographic signature.
 </Note>
 
 ### Step 4: View Content
@@ -94,25 +94,22 @@ If your wallet address matches the recipient address and the policy is still val
 5. You can now view or download the file/message
 
 <Tip>
-The decryption happens entirely on your device. The server never sees your decrypted content.
+  The decryption happens entirely on your device. The server never sees your decrypted content.
 </Tip>
 
 ## Security Best Practices
 
 <AccordionGroup>
-  <Accordion icon="shield-check" title="Verify the recipient address">
+  <Accordion title="Verify the recipient address" icon="shield-check">
     Always double-check the recipient's wallet address before creating a policy. Smart contract policies are immutable once created.
   </Accordion>
-  
-  <Accordion icon="clock" title="Set appropriate expiration times">
+  <Accordion title="Set appropriate expiration times" icon="clock">
     For highly sensitive content, use shorter expiration times (1-24 hours). For less sensitive content, longer periods are fine.
   </Accordion>
-  
-  <Accordion icon="eye-slash" title="Share links securely">
+  <Accordion title="Share links securely" icon="eye-slash">
     While the link itself doesn't contain sensitive data, share it through secure channels (encrypted messaging, etc.).
   </Accordion>
-  
-  <Accordion icon="key" title="Max attempts protection">
+  <Accordion title="Max attempts protection" icon="key">
     Set max verification attempts to 3-5 to protect against brute force attacks or unauthorized access attempts.
   </Accordion>
 </AccordionGroup>
