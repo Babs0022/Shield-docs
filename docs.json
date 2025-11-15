@@ -7,7 +7,7 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/shld.png",
+  "favicon": "/Shld.png",
   "navigation": {
     "tabs": [
       {
@@ -45,8 +45,8 @@
     }
   },
   "logo": {
-    "light": "/logo/shldlight.svg",
-    "dark": "/logo/shlddark.svg"
+    "light": "/logo/Shldlight.svg",
+    "dark": "/logo/Shlddark.svg"
   },
   "navbar": {
     "links": [
