@@ -1,6 +1,6 @@
 ---
-title: 'Developer Guide'
-description: 'Technical documentation for building with Shield'
+title: "Developer Guide"
+description: "Technical documentation for building with Shield"
 ---
 
 ## Developer Guide
@@ -180,16 +180,19 @@ function logAttempt(bytes32 policyId, bool success) external {
 Shield's "zero-knowledge" claim means:
 
 **What the Backend Knows:**
+
 - IPFS hash of encrypted content
 - Policy ID
 - Blockchain transaction history
 
 **What the Backend NEVER Knows:**
+
 - Encryption keys (generated client-side)
 - Decrypted content
 - Original file contents
 
 **How It Works:**
+
 1. Browser generates AES-256 key using Web Crypto API
 2. Content encrypted locally before upload
 3. Only encrypted blob sent to IPFS
@@ -248,17 +251,20 @@ contract ExtendedShield is Shield {
 #### Integration Patterns
 
 **Pattern 1: NFT-Gated Access**
+
 ```solidity
 require(nftContract.balanceOf(msg.sender) > 0, "Must own NFT");
 createPolicy(policyId, recipient, expiry, maxAttempts);
 ```
 
 **Pattern 2: Token-Based Verification**
+
 ```solidity
 require(tokenContract.balanceOf(recipient) >= minBalance, "Insufficient tokens");
 ```
 
 **Pattern 3: Multi-Signature Policies**
+
 ```solidity
 require(signatures.length >= threshold, "Not enough signatures");
 ```
@@ -284,11 +290,12 @@ require(signatures.length >= threshold, "Not enough signatures");
 
 **Current Status**: Not yet audited
 
-**Planned Audits**: Q1 2025
+**Planned Audits**: Q3 2026
 
 The Shield smart contract is simple (58 lines) but has not undergone formal security audit. Use at your own risk in production.
 
 **Security Measures in Place:**
+
 - Minimal attack surface
 - No fund handling
 - Simple state machine
