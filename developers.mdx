@@ -11,9 +11,9 @@ Build secure, decentralized verification systems with Shield's smart contracts a
 
 #### Deployed Contract
 
-**Base Mainnet**: `0x9C7D5bB5426175D341C7B3C60D6A0220Cd5A9034`
+**Base Mainnet**: `0x04e0f1Ca613E1c0397f847537D70BaA52536441f`
 
-- **Explorer**: [View on BaseScan](https://basescan.org/address/0x9C7D5bB5426175D341C7B3C60D6A0220Cd5A9034)
+- **Explorer**: [View on BaseScan](https://basescan.org/address/0x04e0f1Ca613E1c0397f847537D70BaA52536441f)
 - **Source Code**: [Shield.sol on GitHub](https://github.com/Babs0022/SHIELD/blob/main/contracts/contracts/Shield.sol)
 - **ABI**: [Shield.json](https://github.com/Babs0022/SHIELD/blob/main/contracts/artifacts/contracts/Shield.sol/Shield.json)
 
@@ -88,7 +88,7 @@ Shield combines client-side encryption with blockchain-based access control:
 import { ethers } from 'ethers';
 
 // Contract setup
-const SHIELD_ADDRESS = '0x9C7D5bB5426175D341C7B3C60D6A0220Cd5A9034';
+const SHIELD_ADDRESS = '0x04e0f1Ca613E1c0397f847537D70BaA52536441f';
 const SHIELD_ABI = [
   'function createPolicy(bytes32 policyId, address recipient, uint256 expiry, uint256 maxAttempts) external',
   'function logAttempt(bytes32 policyId, bool success) external',
@@ -131,13 +131,13 @@ import { parseEther } from 'viem';
 
 function useShieldPolicy() {
   const { write: createPolicy } = useContractWrite({
-    address: '0x9C7D5bB5426175D341C7B3C60D6A0220Cd5A9034',
+    address: '0x04e0f1Ca613E1c0397f847537D70BaA52536441f',
     abi: SHIELD_ABI,
     functionName: 'createPolicy',
   });
 
   const { data: isPolicyValid } = useContractRead({
-    address: '0x9C7D5bB5426175D341C7B3C60D6A0220Cd5A9034',
+    address: '0x04e0f1Ca613E1c0397f847537D70BaA52536441f',
     abi: SHIELD_ABI,
     functionName: 'isPolicyValid',
   });
@@ -292,7 +292,7 @@ require(signatures.length >= threshold, "Not enough signatures");
 
 **Planned Audits**: Q3 2026
 
-The Shield smart contract is simple (58 lines) but has not undergone formal security audit. Use at your own risk in production.
+The Shield smart contract is simple (52 lines) but has not undergone formal security audit. Use at your own risk in production.
 
 **Security Measures in Place:**
 
