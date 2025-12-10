@@ -58,7 +58,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "ShieldApp",
+      "label": "Shield",
       "href": "https://shieldhq.xyz"
     }
   },
@@ -76,7 +76,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/0xshieldapp",
+      "x": "https://x.com/shieldhq_",
       "github": "https://github.com/babs0022/SHIELD"
     }
   }
