@@ -46,8 +46,8 @@
     }
   },
   "logo": {
-    "light": "/logo/Shldlight.svg",
-    "dark": "/logo/Shlddark.svg"
+    "light": "/logo/Shldlight.png",
+    "dark": "/logo/Shlddark.png"
   },
   "navbar": {
     "links": [
